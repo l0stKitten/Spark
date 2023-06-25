@@ -1,4 +1,6 @@
 # Spark
+Nombre: Daria López Franco
+Los archivos se encuentran en la rama l0stKitten-patch-1
 ## Colaboratory
 Para el colaboratory se utilizó el ejemplo proporcionado en clase. Por lo cual solo faltaba encontrar el datset. El dataset obtenido es de movielens obtenido desde kaggle el cual cuenta con con 27.000.000 valoraciones a 58.000 películas por 280.000 usuarios. Los archivos estaban por separado siendo las películas y los ratings por usuario archivos diferentes, antes de procesar los datos se revisaron y se unieron por medio del ID de las películas. El archivo final con el que se trabajó el modelo es MovieUserRating.csv. En la última conjunto de código se especifica en la variable id_to_retrieve al usuario al que se le recomendará películas según los rating que dió.
 
@@ -23,7 +25,7 @@ spark-submit <Nombre del archivo>
 ```
 El colocar o no datos adicionales no afectó en nada.
 
-El código utilizado es el mismo usado en el colab (Film_Rec.py). Al igual que en el colab para cambiar la recomendación del usuario hay que editar el archivo colocando la ID deseada.
+El código utilizado es el mismo usado en el colab (FilmRecommendc.py). Al igual que en el colab para cambiar la recomendación del usuario hay que editar el archivo colocando la ID deseada.
 
 ### Resultados
 En el ejemplo del colab, al usuario 1 se le recomienda Pulp Fiction, mientras que al ejecutarlo en la máquina virtual se le recomendó Forest Gump. Además cabe resaltar que toma alrededor de 10min la ejecución en la máquina virtual. Se estima mejorar ese tiempo agregando más nodos al clúster.
